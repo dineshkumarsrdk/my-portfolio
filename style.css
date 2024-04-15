@@ -1,0 +1,398 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
+.social-icons li a i {
+    /*color: red;*/
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/*About Section*/
+
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: rgb(91, 90, 90);
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+/* Skills */
+.skills-display {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-progress {
+    width: 10rem;
+    height: 2.5rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    margin: 25px;
+}
+
+.skill-progress>div {
+    border-radius: 20px 0 0 20px;
+}
+
+.skill-name {
+    padding-top: 10px;
+}
+
+.skill-name span {
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+/* section classes */
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n) {
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) {
+    background-color: white;
+}
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+/* percentage classes */
+.eighty-five-percent {
+    width: 85%;
+    height: inherit;
+}
+
+.eighty-percent {
+    width: 80%;
+    height: inherit;
+}
+
+.seventy-percent {
+    width: 70%;
+    height: inherit;
+}
+
+/* background color class */
+.mb-blue {
+    background-color: #2857a4;
+}
+
+.mb-orange {
+    background-color: orange;
+}
+
+.mb-green {
+    background-color: green;
+}
+
+/* Experience */
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    margin: 5%;
+    text-align: right;    
+    font-size: 1rem;
+    height: fit-content;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 52%;
+    text-align: left;
+    padding-left: 0%;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0px;
+    top: 7%;
+    left: 50%;
+    height: 75%;
+    border: 2px dashed #0096fa6b;
+    color: #433e3f;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+.timeline-traveller i {
+    margin-top: -30px;
+    display: block;
+    color: blue;
+    transform: rotate(90deg);
+}
+
+.duration {
+    font-family:'Courier New', Courier, monospace;
+    color: green;
+    font-weight: 600;
+}
+
+.institution {
+    font-weight: 700;
+    padding-bottom: 2%;
+}
+
+.location {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.description {
+    font-size: 0.8rem;
+    text-align: justify;
+    color: rgb(64, 64, 64);
+}
+
+.marks {
+    font-size: 0.8rem;
+    padding-top: 2%;
+}
+
+/* portfolio */
+
+#portfolio-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 5%;
+    width: 100%;
+    height: fit-content;
+}
+
+#portfolio-container>div {
+    position: relative;
+    width: 30vw;
+    height: 300px;
+    margin: 10px;
+    border-radius: 3%;
+}
+
+.portfolio-image-container {
+    width: 30vw;
+    height: 300px;
+    margin: 10px;
+    border-radius: 3%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png');
+    background-color: black;
+    filter: blur(7px);
+}
+
+.project-details {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 1rem;
+    color: rgb(254, 254, 254);
+}
+
+.project-details a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.project-details a:hover {
+    color: rgb(218, 218, 218);
+}
+
+.project-details div {
+    padding: 2%;
+}
+
+.project-details h3 i {
+    font-size: 0.7rem;
+}
+
+/* contact */
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 15px 20px 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    #my-name {
+        font-size: 2rem;
+    }
+    #about-para {
+        font-size: 1rem;
+        width: 80%;
+        line-height: 20px;
+    }
+    .timeline {
+        width: 90%;
+    }
+    .timeline-box {
+        width: 40%;
+        margin: 0;
+    }
+    .description {
+        font-size: 0.6rem;
+    }
+    #timeline-divider {
+        height: 85%;
+    }
+    .timeline-box:nth-child(2n) {
+        padding-left: 5%;
+    }
+    #portfolio-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        align-items: center;
+    }
+    #portfolio-container>div {
+        width: 80%;
+    }
+    .portfolio-image-container {
+        width: 100%;
+    }
+}

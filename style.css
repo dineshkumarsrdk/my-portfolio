@@ -8,7 +8,7 @@ body {
 #body-header {
     height: 65vh;
     opacity: 0.8;
-    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-image: url(./images/header-img.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -99,14 +99,15 @@ body {
     box-shadow: 1px 1px 10px 2px lightgrey;
 }
 
-
 #about-para {
     padding: 10px;
     width: 70%;
     text-align: justify;
-    color: rgb(91, 90, 90);
+    color: rgb(34, 34, 34);
     line-height: 28px;
     font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
     margin: auto;
 }
 
@@ -204,6 +205,18 @@ section:nth-child(2n + 1) {
     background-color: green;
 }
 
+.mb-red {
+    background-color: rgb(231, 81, 55);
+}
+
+.mb-yellow {
+    background-color: rgb(231, 237, 65);
+}
+
+.mb-purple {
+    background-color: rgb(141, 57, 205);
+}
+
 /* Experience */
 .timeline {
     position: relative;
@@ -266,7 +279,7 @@ section:nth-child(2n + 1) {
 }
 
 .description {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: justify;
     color: rgb(64, 64, 64);
 }
@@ -303,8 +316,8 @@ section:nth-child(2n + 1) {
     border-radius: 3%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png');
-    background-color: black;
+    /* background-image: url(''); */
+    background-color: rgb(240, 238, 238);
     filter: blur(7px);
 }
 
@@ -313,16 +326,16 @@ section:nth-child(2n + 1) {
     top: 10%;
     left: 10%;
     font-size: 1rem;
-    color: rgb(254, 254, 254);
+    color: rgb(6, 6, 6);
 }
 
 .project-details a {
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(5, 5, 5);
 }
 
 .project-details a:hover {
-    color: rgb(218, 218, 218);
+    color: rgb(88, 88, 88);
 }
 
 .project-details div {
@@ -331,6 +344,11 @@ section:nth-child(2n + 1) {
 
 .project-details h3 i {
     font-size: 0.7rem;
+}
+
+.highlight {
+    font-weight: 600;
+    color: rgb(118, 118, 216);
 }
 
 /* contact */
